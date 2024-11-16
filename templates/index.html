@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodSync</title>
+    <!-- Link to the styles.css using Flask's url_for function -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="welcome-screen">
+        <h1 id="welcome-title">MoodSync</h1>
+        <h3 id="welcome-caption" class="fade-caption">Adjust your lights based on your current emotion</h3>
+    </div>
+    
+    <div id="main-interface" class="hidden">
+        <div class="box">
+            <h1>MoodSync</h1>
+            <p>Adjust your lights based on your current emotion</p>
+
+            <!-- Capture Emotion -->
+            <button id="capture-button" class="capture-btn">Capture Emotion</button>
+
+
+            <p id="emotion-status">Your Current Emotion is: <span id="emotion-result">None</span></p>
+            
+            <!-- Video Stream and Image Display -->
+            <div id="video-container" class="hidden">
+                <video id="camera-stream" autoplay></video>
+            </div>
+            <img id="selected-image" src="" alt="Captured Image" class="hidden" />
+        </div>
+    </div>
+
+    <!-- Link to the app.js using Flask's url_for function -->
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

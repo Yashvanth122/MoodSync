@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1, h3 {
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Welcome Screen */
+#welcome-screen {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#welcome-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #333;
+    animation: fadeInOut 2s ease-in-out infinite; /* Independent fade animation for MoodSync title */
+}
+
+#welcome-caption {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+/* Keyframes for Letter Fade-out Animation */
+@keyframes fadeOutLetter {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Keyframes for the Title Fade-in, Fade-out */
+@keyframes fadeInOut {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Main Interface */
+#main-interface {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.capture-btn, .view-backend-btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2196f3;
+    color: white;
+}
+
+#emotion-result {
+    color: red;
+    font-weight: bold;
+}
+
+#selected-image, #camera-stream {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid #ccc;
+}
+
+#camera-stream {
+    width: 80%; 
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
