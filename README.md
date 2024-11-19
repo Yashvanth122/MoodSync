@@ -2,7 +2,7 @@
 
 ## Demo Video
 
-<video src="Assets/Demo%20Video.mp4" controls="controls" style="max-width: 100%; height: auto;">
+<video src="https://github.com/Yashvanth122/MoodSync/blob/main/Assets/Demo%20Video.mp4" controls="controls" style="max-width: 100%; height: auto;">
     Your browser does not support the video tag.
 </video>
 
